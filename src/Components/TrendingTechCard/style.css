@@ -1,0 +1,29 @@
+.home > .home-body > .trending-technologies > .technologies-items > .trendingTechCard{
+    background: #fff;
+    -webkit-box-shadow: 0px 2px 20px -3px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0px 2px 20px -3px rgba(0,0,0,0.12);
+    box-shadow: 0px 2px 20px -3px rgba(0,0,0,0.12);
+    padding: 15px 32px;
+    position: relative;
+    width: 20vw;
+    margin-bottom: 20px;
+}
+
+.home > .home-body > .trending-technologies > .technologies-items > .trendingTechCard > img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+}
+
+.home > .home-body > .trending-technologies > .technologies-items > .trendingTechCard > a{
+    text-decoration: none;
+    background: #000;
+    color: #fff;
+    padding: 5px 10px;
+    line-height: 2.75;
+}
+
+.home > .home-body > .trending-technologies > .technologies-items > .trendingTechCard > h4{
+    color: #3BC478;
+}

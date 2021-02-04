@@ -1,0 +1,95 @@
+.recursiveMessage{
+    text-align: center;
+    padding: 20px 3vw;
+}
+
+.home > .home-body{
+    padding: 0 3vw;
+}
+
+/* open projects */
+
+.home > .home-body > .open-projects{
+    padding: 0 3vw;
+}
+
+.home > .home-body > .open-projects > h2{
+    margin: 20px 0;
+}
+
+.home > .home-body > .open-projects > .project-items{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.home > .home-body > .open-projects > a{
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    padding: 10px 15px;
+    line-height: 2.5;
+}
+
+/* blogs and news */
+
+.home > .home-body > .blogs-news{
+    margin-top: 40px;
+    border-top: 1px solid grey;
+    padding: 20px 3vw;
+    margin-bottom: 20px;
+}
+
+.home > .home-body > .blogs-news > h2{
+    margin-bottom: 20px;
+}
+
+.home > .home-body > .blogs-news > .news-items{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home > .home-body > .blogs-news > .news-items > div{
+    max-width: 42.5vw;
+    margin-bottom: 15px;
+}
+
+.home > .home-body > .blogs-news > .news-items > .item-secondary > .blog-card-secondary{
+    display: flex;
+    margin-bottom: 15px;
+    background: #fff;
+    -webkit-box-shadow: 0px 2px 20px -3px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0px 2px 20px -3px rgba(0,0,0,0.12);
+    box-shadow: 0px 2px 20px -3px rgba(0,0,0,0.12);
+    border-radius: 12px;
+}
+
+.home > .home-body > .blogs-news > .news-items > .item-secondary > .blog-card-secondary > .content{
+    padding: 25px;
+    line-height: 1.5;
+}
+
+.home > .home-body > .blogs-news > a{
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    padding: 10px 15px;
+    line-height: 2.5;
+}
+
+/* trending technologies */
+.home > .home-body > .trending-technologies{
+    border-top: 1px solid grey;
+    padding: 40px 3vw 20px 3vw;
+}
+
+.home > .home-body > .trending-technologies > .technologies-items{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60vw;
+}
+
+.home > .home-body > .trending-technologies > .technologies-items > div:nth-child(n){
+    margin-right: 20px;
+}
