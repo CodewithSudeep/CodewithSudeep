@@ -6,10 +6,10 @@ export default function TrendingTechCard() {
     return (
         <div className="trendingTechCard">
             <img src="https://sujanbyanjankar.com.np/wp-content/uploads/2019/09/javascript.png" alt="" className="course-image"/>
-            <h4>
+            <h5>
                 PATH
-            </h4>
-            <h2 className="courseTitle">Javascript</h2>
+            </h5>
+            <h3 className="courseTitle">Javascript</h3>
             <p>
                 12 contents
             </p>

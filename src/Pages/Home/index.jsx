@@ -79,20 +79,61 @@ const index = () => {
                 <div className="trending-technologies">
                     <div className="technologies-items">
                         <Suspense fallback={<div>Trending Tech Card Loading...</div>}>
-                            <TrendingTechCard/>
+                            <TrendingTechCard />
                         </Suspense>
                         <Suspense fallback={<div>Trending Tech Card Loading...</div>}>
-                            <TrendingTechCard/>
+                            <TrendingTechCard />
                         </Suspense>
                         <Suspense fallback={<div>Trending Tech Card Loading...</div>}>
-                            <TrendingTechCard/>
+                            <TrendingTechCard />
                         </Suspense>
                         <Suspense fallback={<div>Trending Tech Card Loading...</div>}>
-                            <TrendingTechCard/>
+                            <TrendingTechCard />
                         </Suspense>
                     </div>
                     <div className="content">
+                        <h3># Trending Technologies</h3>
+                        <h2>
+                            Popular topics to learn now
+                        </h2>
+                        <p>
+                            Not sure what technologies to focus on? The Technology Index ranks 850+ technologies by their relative popularity. See what’s topping the charts and get recommended courses to skill up.
+                        </p>
+                        <Link><span style={{ color: "#3BC478" }}>~root:#</span> sudo ls -a trending-techs</Link>
+                    </div>
+                </div>
 
+                {/* codewithsudeep for */}
+                <div className="codewithsudeep-for">
+                    <u>
+                        <h2># CodewithSudeep For</h2>
+                    </u>
+
+                    {/* contents */}
+                    <div className="contents">
+                        <div className="interns">
+                            <h3># 1. Interns</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt sit quasi alias quae? Odio, quos corporis reprehenderit laboriosam excepturi error ipsam illum natus consequatur ratione omnis rem voluptates beatae.
+                            </p>
+                            <Link><span style={{ color: "#3BC478" }}>~root:#</span> vim /root/codewithsudeep-for-interns.txt</Link>
+                        </div>
+
+                        <div className="professionals">
+                            <h3># 2. Professionals</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt sit quasi alias quae? Odio, quos corporis reprehenderit laboriosam excepturi error ipsam illum natus consequatur ratione omnis rem voluptates beatae.
+                            </p>
+                            <Link><span style={{ color: "#3BC478" }}>~root:#</span> vim /root/codewithsudeep-for-professionals.txt</Link>
+                        </div>
+
+                        <div className="companies">
+                            <h3># 3. Companies</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi voluptatibus labore quos incidunt minima iusto vel quam id nisi commodi cumque atque reiciendis beatae amet quibusdam magnam dolorem, rem sit.
+                            </p>
+                            <Link><span style={{ color: "#3BC478" }}>~root:#</span> vim /root/codewithsudeep-for-companies.txt</Link>
+                        </div>
                     </div>
                 </div>
             </div>
