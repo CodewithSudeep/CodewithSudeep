@@ -1,0 +1,19 @@
+.footer{
+    display: flex;
+    align-items: center;
+    /* background: rgb(212, 212, 212); */
+    padding: 10px 3vw;
+    justify-content: space-evenly;
+}
+
+.footer > div:last-child{
+    display: flex;
+}
+
+.footer > div > a{
+    text-decoration: none;
+}
+
+.footer > div > a:first-child{
+    margin-right: 20px;
+}

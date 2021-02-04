@@ -10,6 +10,7 @@ const ProjectCard = React.lazy(() => import('../../Components/ProjectCard'))
 const BlogFocused = React.lazy(() => import('../../Components/BlogFocused'))
 const BlogCardSecondary = React.lazy(() => import('../../Components/BlogCardSecondary'))
 const TrendingTechCard = React.lazy(() => import('../../Components/TrendingTechCard'))
+const Footer = React.lazy(() => import('../../Components/Footer'))
 
 const index = () => {
     return (
@@ -112,7 +113,7 @@ const index = () => {
                     {/* contents */}
                     <div className="contents">
                         <div className="interns">
-                            <h3># 1. Interns</h3>
+                            <h3># 1. Interns / Students</h3>
                             <p>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda sunt sit quasi alias quae? Odio, quos corporis reprehenderit laboriosam excepturi error ipsam illum natus consequatur ratione omnis rem voluptates beatae.
                             </p>
@@ -137,6 +138,27 @@ const index = () => {
                     </div>
                 </div>
             </div>
+
+            <div className="quote">
+                <div>
+                    <h2>"Everyone has history making ideas,<br/> but not everyone works on it.<br /> Neither they have the right team nor the patience."</h2>
+                </div>
+                <div>
+                    <h3># Let's make the impossible, possible.</h3>
+                    <ol>
+                        <li>1. Generate an Idea</li>
+                        <li>2. Gather / Join the Team</li>
+                        <li>3. Make success stories</li>
+                    </ol>
+                    <h3>
+                        <Link><span style={{ color: "#3BC478" }}>~root:#</span> sudo apt remove imposter-syndrome && apt purge imposter-syndrome</Link>
+                    </h3>
+                </div>
+            </div>
+            {/* footer */}
+            <Suspense fallback={<div>Footer Loading...</div>}>
+                <Footer />
+            </Suspense>
         </div>
     );
 }
