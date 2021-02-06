@@ -15,6 +15,7 @@
     padding: 25px 0 20px 0;
     line-height: 1.5;
     border-bottom: 1px solid grey;
+    flex-wrap: wrap;
 }
 
 .landing > .landing-bottom > div{
@@ -30,4 +31,24 @@
     background: rgb(59, 196, 120);
     padding: 12px;
     color: #fff!important;
+}
+
+
+@media (max-width: 576px){
+    .landing > .landing-bottom > div{
+        width: 80vw;
+        text-align: center;
+        display: block;
+        margin-bottom: 30px;
+    }  
+    
+    .landing > .landing-bottom{
+        padding-top: 40px;
+    }
+    
+    .landing > .landing-bottom > div:nth-child(2){
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+        padding: 25px 0;
+    }   
 }

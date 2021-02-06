@@ -33,3 +33,9 @@
     font-weight: 700;
     color: #3BC478;
 }
+
+@media (max-width: 576px){
+.home > .home-body > .trending-technologies > .technologies-items > .trendingTechCard{
+    width: 85vw;
+}
+}

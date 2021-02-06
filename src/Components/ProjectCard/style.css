@@ -32,3 +32,9 @@
     padding: 2px 5px;
     font-size: 15px;
 }
+
+@media (max-width: 576px){
+.projectCard{
+    width: 85vw;
+}
+}

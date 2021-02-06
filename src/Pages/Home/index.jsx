@@ -11,13 +11,16 @@ const BlogFocused = React.lazy(() => import('../../Components/BlogFocused'))
 const BlogCardSecondary = React.lazy(() => import('../../Components/BlogCardSecondary'))
 const TrendingTechCard = React.lazy(() => import('../../Components/TrendingTechCard'))
 const Footer = React.lazy(() => import('../../Components/Footer'))
+const NavbarSmall = React.lazy(() => import('../../Components/NavbarSmall'))
 
 const index = () => {
     return (
         <div className="home">
             {/* navbar */}
             <Suspense fallback={<div>Navbar Loading...</div>}>
-                <Navbar />
+                {
+                    window.screen > 576 ? <Navbar/> : <NavbarSmall/>
+                }
             </Suspense>
 
             <div className="home-body">

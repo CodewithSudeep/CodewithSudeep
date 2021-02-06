@@ -1,0 +1,28 @@
+.navbarSmall{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 4.5vw 10px 3vw;
+    align-items: center;
+    font-size: 16px;
+    -webkit-box-shadow: 0px -2px 33px -15px rgba(0,0,0,0.30);
+    -moz-box-shadow: 0px -2px 33px -15px rgba(0,0,0,0.30);
+    box-shadow: 0px -2px 33px -15px rgba(0,0,0,0.30);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: #fff;
+}
+
+.navbarSmall .MuiButton-root{
+    min-width: auto!important;
+}
+
+.navbarSmall > .nav-brand > img{
+    max-width: 180px;
+}
+
+.navbarSmall > .nav-links > ul > li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 30px;
+}

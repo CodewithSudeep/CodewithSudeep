@@ -1,9 +1,9 @@
 .footer{
     display: flex;
     align-items: center;
-    /* background: rgb(212, 212, 212); */
     padding: 10px 3vw;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .footer > div:last-child{
@@ -16,4 +16,11 @@
 
 .footer > div > a:first-child{
     margin-right: 20px;
+}
+
+@media (max-width: 576px){
+    .footer > div:first-child{
+        margin-bottom: 20px;
+        text-align: center;
+    }
 }
