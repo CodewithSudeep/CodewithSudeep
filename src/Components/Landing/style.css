@@ -1,5 +1,5 @@
 .landing > .landing-top{
-    padding: 200px;
+    padding: 200px 0;
     background: url('../../Images/Landing.jpg') no-repeat;
     background-size: cover;
 }

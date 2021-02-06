@@ -31,7 +31,7 @@
   line-height: 2.5;
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
   .home > .home-body > .open-projects > .project-items {
     justify-content: center;
   }
@@ -96,18 +96,28 @@
   line-height: 2.5;
 }
 
-@media (max-width: 576px){
-.home > .home-body > .blogs-news > .news-items > div {
-  max-width: 85vw;
-}
+@media (max-width: 576px) {
+  .home > .home-body > .blogs-news > .news-items > div {
+    max-width: 85vw;
+    margin: 0 auto 30px auto;
+  }
 
-.home
-  > .home-body
-  > .blogs-news
-  > .news-items
-  > .item-secondary
-  > .blog-card-secondary
-  > .content {
+  .home
+    > .home-body
+    > .blogs-news
+    > .news-items
+    > .item-secondary
+    > .blog-card-secondary{
+      margin-bottom: 30px;
+    }
+
+  .home
+    > .home-body
+    > .blogs-news
+    > .news-items
+    > .item-secondary
+    > .blog-card-secondary
+    > .content {
     font-size: 14px;
   }
 }
@@ -165,14 +175,14 @@
   line-height: 3.5;
 }
 
-@media (max-width: 576px){
+@media (max-width: 576px) {
   .home > .home-body > .trending-technologies > div {
-    max-width: 85vw;
-    flex: 1 1 1;
+    max-width: 100%;
+    margin: 0 auto 20px 0;
     justify-content: center;
   }
 
-  .home > .home-body > .trending-technologies > div:last-child{
+  .home > .home-body > .trending-technologies > div:last-child {
     max-width: 85vw;
   }
 }
@@ -196,7 +206,7 @@
 }
 
 .home > .home-body > .codewithsudeep-for > .contents > div > p {
-    padding: 5px 0 15px 0;
+  padding: 5px 0 15px 0;
 }
 
 .home > .home-body > .codewithsudeep-for > .contents > div > a {
@@ -206,8 +216,25 @@
   padding: 5px 10px;
 }
 
+@media (max-width: 576px){
+.home > .home-body > .codewithsudeep-for h2{
+  margin-bottom: 20px;
+}
+  .home > .home-body > .codewithsudeep-for > .contents {
+    display: block;
+  }
+
+.home > .home-body > .codewithsudeep-for > .contents > div {
+  padding: 0;
+}
+
+.home > .home-body > .codewithsudeep-for > .contents > div:nth-child(2) {
+  margin: 30px 0;
+}
+}
+
 /* quote */
-.home > .quote{
+.home > .quote {
   background: rgb(240, 240, 240);
   display: flex;
   justify-content: space-evenly;
@@ -217,16 +244,16 @@
   flex-wrap: wrap;
 }
 
-.home > .quote ol{
+.home > .quote ol {
   margin: 10px 0;
 }
 
-.home > .quote ol li{
+.home > .quote ol li {
   font-size: 18px;
   list-style: none;
 }
 
-.home > .quote a{
+.home > .quote a {
   font-size: 15px;
   padding: 5px;
   text-decoration: none;
@@ -234,13 +261,13 @@
   color: #fff;
 }
 
-@media (max-width: 576px){
-  .home > .quote{
+@media (max-width: 576px) {
+  .home > .quote {
     flex: 1;
     padding: 30px 6vw;
   }
 
-  .home > .quote > div:first-child{
+  .home > .quote > div:first-child {
     margin-bottom: 20px;
   }
 }
