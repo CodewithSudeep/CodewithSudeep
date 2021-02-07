@@ -175,6 +175,18 @@
   line-height: 3.5;
 }
 
+@media (max-width: 996px){
+  .home > .home-body > .trending-technologies{
+    flex-direction: column;
+  }
+
+  .home > .home-body > .trending-technologies > div {
+    max-width: 100%;
+    margin: 0 auto 20px 0;
+    justify-content: center;
+  }
+}
+
 @media (max-width: 576px) {
   .home > .home-body > .trending-technologies > div {
     max-width: 100%;

@@ -12,12 +12,14 @@ const index = () => {
 
             <div className="nav-links">
                 <ul>
-                    <li>Items</li>
-                    <li>Items</li>
-                    <li>Items</li>
-                    <li>Items</li>
-                    <li>Items</li>
-                    <li>Items</li>
+                    <li>HOME</li>
+                    <li>ABOUT</li>
+                    <li>PROJECTS</li>
+                    <li>COURSES</li>
+                    <li>RESOURCES</li>
+                    <li>CAREER</li>
+                    <li>BLOGS & NEWS</li>
+                    <li>LOGIN / REGISTER</li>
                 </ul>
             </div>
         </div>

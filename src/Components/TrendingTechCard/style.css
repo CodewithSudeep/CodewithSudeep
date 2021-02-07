@@ -58,6 +58,32 @@
   color: #3bc478;
 }
 
+@media (max-width: 1200px) {
+  .home
+    > .home-body
+    > .trending-technologies
+    > .technologies-items
+    > .trendingTechCard {
+    width: 35%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 996px) {
+  .home
+    > .home-body
+    > .trending-technologies
+    > .technologies-items
+    > .trendingTechCard {
+    width: 35%;
+    margin-bottom: 30px;
+  }
+
+  .home > .home-body > .trending-technologies > div:last-child {
+    max-width: 85vw;
+  }
+}
+
 @media (max-width: 576px) {
   .home
     > .home-body
@@ -65,10 +91,13 @@
     > .technologies-items
     > .trendingTechCard {
     width: 100%;
-    margin-bottom: 30px;
   }
 
-  .home > .home-body > .trending-technologies > .technologies-items > div:nth-child(n){
-      margin-right: 0;
+  .home
+    > .home-body
+    > .trending-technologies
+    > .technologies-items
+    > div:nth-child(n) {
+    margin-right: 0;
   }
 }

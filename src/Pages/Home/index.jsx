@@ -19,7 +19,8 @@ const index = () => {
             {/* navbar */}
             <Suspense fallback={<div>Navbar Loading...</div>}>
                 {
-                    window.screen > 576 ? <Navbar/> : <NavbarSmall/>
+                    // this screen must be calculated on parent context
+                    window.innerWidth > 1164 ? <Navbar/> : <NavbarSmall/>
                 }
             </Suspense>
 
