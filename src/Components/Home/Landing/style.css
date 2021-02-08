@@ -1,0 +1,53 @@
+.landing > .landing-top {
+  padding: 200px 0;
+  background: url("../../../Images/Landing.webp") no-repeat;
+  background-size: cover;
+}
+
+.landing > .landing-top > .content > .MuiPaper-root {
+  box-shadow: none;
+  border: 1px solid grey !important;
+}
+
+.landing > .landing-bottom {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 25px 0 20px 0;
+  line-height: 1.5;
+  border-bottom: 1px solid grey;
+  flex-wrap: wrap;
+}
+
+.landing > .landing-bottom > div {
+  display: flex;
+}
+
+.landing > .landing-bottom > div > .content-image {
+  margin-right: 15px;
+}
+
+.landing > .landing-bottom > div > .content-image > .MuiSvgIcon-root {
+  font-size: 1.75rem;
+  background: rgb(59, 196, 120);
+  padding: 12px;
+  color: #fff !important;
+}
+
+@media (max-width: 576px) {
+  .landing > .landing-bottom > div {
+    width: 80vw;
+    text-align: center;
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .landing > .landing-bottom {
+    padding-top: 40px;
+  }
+
+  .landing > .landing-bottom > div:nth-child(2) {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    padding: 25px 0;
+  }
+}
