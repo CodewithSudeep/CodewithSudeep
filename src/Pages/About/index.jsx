@@ -7,6 +7,7 @@ const NavbarSmall = React.lazy(() => import("../../Components/NavbarSmall"));
 const RecursiveMessage = React.lazy(() =>
   import("../../Components/Home/RecursiveMessage")
 );
+const Stepper = React.lazy(() => import("../../Components/About/Stepper"));
 
 export default function About() {
   useEffect(() => {
@@ -66,6 +67,29 @@ export default function About() {
             </p>
           </div>
         </div>
+
+        <div className={styles.openSources}>
+          <h3># Open Sources</h3>
+          <div className={styles.content}>
+            <div>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Voluptatem voluptas, repudiandae dicta eaque maiores impedit,
+              distinctio ex temporibus dolore praesentium minus quos nulla nemo,
+              possimus at blanditiis ullam corporis iure. <br />
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum
+              natus sed molestiae asperiores dolores accusamus quis laudantium
+              itaque magni fugit adipisci blanditiis iusto, ducimus, quae quos,
+              animi nesciunt ipsam repellendus.
+            </div>
+
+            <div>
+              <Suspense fallback={<div>Stepper Loading</div>}>
+                <Stepper />
+              </Suspense>
+            </div>
+          </div>
+        </div>
+        <span className={styles.openSourceBanner}></span>
       </div>
 
       {/* footer */}
