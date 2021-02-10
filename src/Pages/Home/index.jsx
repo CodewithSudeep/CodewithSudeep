@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./style.css";
 
 // components
-const Navbar = React.lazy(() => import("../../Components/Navbar"));
 const Landing = React.lazy(() => import("../../Components/Home/Landing"));
 const RecursiveMessage = React.lazy(() =>
   import("../../Components/Home/RecursiveMessage")
@@ -20,8 +19,6 @@ const BlogCardSecondary = React.lazy(() =>
 const TrendingTechCard = React.lazy(() =>
   import("../../Components/Home/TrendingTechCard")
 );
-const Footer = React.lazy(() => import("../../Components/Footer"));
-const NavbarSmall = React.lazy(() => import("../../Components/NavbarSmall"));
 
 export default function Home() {
   useEffect(() => {
@@ -30,11 +27,6 @@ export default function Home() {
   }, []);
   return (
     <div className="home">
-      {/* navbar */}
-      <Suspense fallback={<div>Navbar Loading...</div>}>
-        {window.innerWidth > 1164 ? <Navbar /> : <NavbarSmall />}
-      </Suspense>
-
       <div className="home-body">
         {/* title message */}
         <Suspense fallback={<div>Recursive Message loading...</div>}>
@@ -69,7 +61,7 @@ export default function Home() {
               <ProjectCard />
             </Suspense>
           </div>
-          <Link>
+          <Link to="#">
             <span style={{ color: "#3BC478" }}>~root:#</span> sudo ls -a
             open-projects
           </Link>
@@ -91,7 +83,7 @@ export default function Home() {
               </Suspense>
             </div>
           </div>
-          <Link>
+          <Link to="#">
             <span style={{ color: "#3BC478" }}>~root:#</span> sudo ls -a
             blogs-news
           </Link>
@@ -121,7 +113,7 @@ export default function Home() {
               850+ technologies by their relative popularity. See what’s topping
               the charts and get recommended courses to skill up.
             </p>
-            <Link>
+            <Link to="#">
               <span style={{ color: "#3BC478" }}>~root:#</span> sudo ls -a
               trending-techs
             </Link>
@@ -144,7 +136,7 @@ export default function Home() {
                 reprehenderit laboriosam excepturi error ipsam illum natus
                 consequatur ratione omnis rem voluptates beatae.
               </p>
-              <Link>
+              <Link to="#">
                 <span style={{ color: "#3BC478" }}>~root:#</span> vim
                 /root/codewithsudeep-for-interns.txt
               </Link>
@@ -158,7 +150,7 @@ export default function Home() {
                 reprehenderit laboriosam excepturi error ipsam illum natus
                 consequatur ratione omnis rem voluptates beatae.
               </p>
-              <Link>
+              <Link to="#">
                 <span style={{ color: "#3BC478" }}>~root:#</span> vim
                 /root/codewithsudeep-for-professionals.txt
               </Link>
@@ -172,7 +164,7 @@ export default function Home() {
                 commodi cumque atque reiciendis beatae amet quibusdam magnam
                 dolorem, rem sit.
               </p>
-              <Link>
+              <Link to="#">
                 <span style={{ color: "#3BC478" }}>~root:#</span> vim
                 /root/codewithsudeep-for-companies.txt
               </Link>
@@ -197,17 +189,13 @@ export default function Home() {
             <li>3. Make success stories</li>
           </ol>
           <h3>
-            <Link>
+            <Link to="#">
               <span style={{ color: "#3BC478" }}>~root:#</span> sudo apt remove
               imposter-syndrome && apt purge imposter-syndrome
             </Link>
           </h3>
         </div>
       </div>
-      {/* footer */}
-      <Suspense fallback={<div>Footer Loading...</div>}>
-        <Footer />
-      </Suspense>
     </div>
   );
 }

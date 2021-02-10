@@ -1,9 +1,10 @@
 import React, { Suspense, useEffect } from "react";
-import styles from "./style.module.css";
+import "./style.css";
+import {Link} from 'react-router-dom'
 
-const Navbar = React.lazy(() => import("../../Components/Navbar"));
-const Footer = React.lazy(() => import("../../Components/Footer"));
-const NavbarSmall = React.lazy(() => import("../../Components/NavbarSmall"));
+import SudeepIcon from '../../Images/Sudeep.JPG'
+import SangyaIcon from '../../Images/Sangya.jpg'
+
 const RecursiveMessage = React.lazy(() =>
   import("../../Components/Home/RecursiveMessage")
 );
@@ -16,13 +17,8 @@ export default function About() {
   }, []);
 
   return (
-    <div className={styles.about}>
-      {/* navbar */}
-      <Suspense fallback={<div>Navbar Loading...</div>}>
-        {window.innerWidth > 1164 ? <Navbar /> : <NavbarSmall />}
-      </Suspense>
-
-      <div className={styles.aboutBody}>
+    <div className="about">
+      <div className="aboutBody">
         {/* title message */}
         <Suspense fallback={<div>Recursive Message loading...</div>}>
           <RecursiveMessage />
@@ -30,7 +26,7 @@ export default function About() {
 
         {/* codewith sudeep */}
         <span></span>
-        <div className={styles.codewithsudeep}>
+        <div className="codewithsudeep">
           <div>
             <h3># How CodewithSudeep started?</h3>
             <p>
@@ -68,10 +64,10 @@ export default function About() {
           </div>
         </div>
 
-        <div className={styles.openSources}>
-          <h3># Open Sources</h3>
-          <div className={styles.content}>
+        <div className="openSources">
+          <div className="content">
             <div>
+              <h3># Open Sources</h3>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Voluptatem voluptas, repudiandae dicta eaque maiores impedit,
               distinctio ex temporibus dolore praesentium minus quos nulla nemo,
@@ -89,13 +85,86 @@ export default function About() {
             </div>
           </div>
         </div>
-        <span className={styles.openSourceBanner}></span>
-      </div>
+        <span className="openSourceBanner"></span>
 
-      {/* footer */}
-      <Suspense fallback={<div>Footer Loading...</div>}>
-        <Footer />
-      </Suspense>
+        {/* mind behind codewithsudeep */}
+        <div className="minds-behind-codewithsudeep">
+          <h3># Minds Behind CodewithSudeep</h3>
+          <div className="items">
+            {/* sudeep */}
+            <div className="item sudeep">
+              <img src={SudeepIcon} alt="Sudeep Mishra" />
+              <div className="item-content">
+                <h4>Sudeep Mishra</h4>
+                <span>Co-Founder</span>
+              </div>
+            </div>
+
+            {/* sangya */}
+            <div className="item sangya">
+              <img src={SangyaIcon} alt="Sangya Sherpa" />
+              <div className="item-content">
+                <h4>Sangya Sherpa</h4>
+                <span>Co-Founder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Investors */}
+        <div className="group-of-investors">
+          <h3># Group of Investors & Sponsors</h3>
+          <div className="items">
+            <div className="item">
+              <img src={SudeepIcon} alt="Amit Yadav" />
+              <div className="item-content">
+                <h4>Amit Yadav</h4>
+              </div>
+            </div>
+
+            <div className="item">
+              <img src={SudeepIcon} alt="Arbind Singh" />
+              <div className="item-content">
+                <h4>Arbind Singh</h4>
+              </div>
+            </div>
+
+            <div className="item">
+              <img src={SudeepIcon} alt="Chandra Prakash Shah" />
+              <div className="item-content">
+                <h4>Chandra Prakash Shah</h4>
+              </div>
+            </div>
+            
+            <div className="item">
+              <img src={SudeepIcon} alt="Sijan Karki" />
+              <div className="item-content">
+                <h4>Sijan Karki</h4>
+              </div>
+            </div>
+            
+            <div className="item">
+              <img src={SudeepIcon} alt="Ayush Baruwal" />
+              <div className="item-content">
+                <h4>Ayush Baruwal</h4>
+              </div>
+            </div>
+            
+            <div className="item">
+              <img src={SudeepIcon} alt="Nirdesh Dixit" />
+              <div className="item-content">
+                <h4>Nirdesh Dixit</h4>
+              </div>
+            </div>
+          </div>
+
+          <Link to="#">
+            <span style={{ color: "#3BC478" }}>~root:#</span> git clone group-of-investor
+          </Link>
+        </div>
+
+        <span className="openSourceBanner"></span>
+      </div>
     </div>
   );
 }

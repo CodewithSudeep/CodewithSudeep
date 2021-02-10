@@ -1,0 +1,11 @@
+.MuiStepLabel-label.MuiStepLabel-active, .MuiStepLabel-label{
+    color: rgba(0, 0, 0, 1)!important;
+    font-weight: 500!important;
+    font-size: 15px;
+    line-height: 1.75!important;
+  font-family: 'Quicksand', sans-serif!important;
+}
+
+.MuiStepIcon-root.MuiStepIcon-active, .MuiStepIcon-root{
+    color: #3BC478!important;
+}

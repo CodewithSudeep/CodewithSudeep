@@ -251,6 +251,11 @@
   flex-wrap: wrap;
 }
 
+.home > .quote h2 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
 .home > .quote ol {
   margin: 10px 0;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import Logo from "../../Images/Logo.webp";
 
@@ -72,75 +72,75 @@ export default function NavbarSmall() {
         </ListItem>
         <Divider />
         <ListItem button key="home">
-          <Link to="/">
+          <NavLink to="/">
             <ListItemIcon>
               <HomeIcon />
             </ListItemIcon>
             <ListItemText primary="HOME" />
-          </Link>
+          </NavLink>
         </ListItem>
 
         <ListItem button key="about">
-          <Link to="/about">
+          <NavLink to="/about">
             <ListItemIcon>
               <BusinessIcon />
             </ListItemIcon>
             <ListItemText primary="ABOUT" />
-          </Link>
+          </NavLink>
         </ListItem>
 
         <ListItem button key="projects">
-          <Link to="#">
+          <NavLink to="#">
             <ListItemIcon>
               <AccountTreeIcon />
             </ListItemIcon>
             <ListItemText primary="PROJECTS" />
-          </Link>
+          </NavLink>
         </ListItem>
 
         <ListItem button key="courses">
-          <Link to="#">
+          <NavLink to="#">
             <ListItemIcon>
               <ClassIcon />
             </ListItemIcon>
             <ListItemText primary="COURSES" />
-          </Link>
+          </NavLink>
         </ListItem>
 
         <ListItem button key="resources">
-          <Link to="#">
+          <NavLink to="#">
             <ListItemIcon>
               <BlurOnIcon />
             </ListItemIcon>
             <ListItemText primary="RESOURCES" />
-          </Link>
+          </NavLink>
         </ListItem>
 
         <ListItem button key="career">
-          <Link to="#">
+          <NavLink to="#">
             <ListItemIcon>
               <WorkOutlineIcon />
             </ListItemIcon>
             <ListItemText primary="CAREER" />
-          </Link>
+          </NavLink>
         </ListItem>
 
         <ListItem button key="blogs-and-news">
-          <Link to="#">
+          <NavLink to="#">
             <ListItemIcon>
               <AirplayIcon />
             </ListItemIcon>
             <ListItemText primary="BLOGS & NEWS" />
-          </Link>
+          </NavLink>
         </ListItem>
 
         <ListItem button key="login-register">
-          <Link to="#">
+          <NavLink to="#">
             <ListItemIcon>
               <FingerprintIcon />
             </ListItemIcon>
             <ListItemText primary="LOGIN / REGISTER" />
-          </Link>
+          </NavLink>
         </ListItem>
       </List>
     </div>
@@ -152,7 +152,7 @@ export default function NavbarSmall() {
         <img src={Logo} alt="CodewithSudeep Logo" />
       </div>
 
-      <div className="nav-links">
+      <div className="nav-NavLinks">
         <Button onClick={toggleDrawer("left", true)}>
           <MenuIcon />
         </Button>

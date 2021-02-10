@@ -31,13 +31,24 @@
   margin-left: 30px;
 }
 
-.home .navbarSmall-list a,
-a:-webkit-any-link {
-  text-decoration: none;
-  color: #000;
-  display: contents;
-}
-
 .MuiDrawer-root .MuiTypography-body1 {
   font-size: 14px !important;
+}
+
+
+.MuiPaper-root .navbarSmall-list img{
+  max-width: 20vw;
+}
+
+.MuiPaper-root .navbarSmall-list .MuiListItem-root a{
+  display: flex!important;
+  align-items: center!important;
+  color: #000!important;
+  text-decoration: none!important;
+}
+
+@media (max-width: 576px){
+  .MuiPaper-root .navbarSmall-list img{
+    max-width: 40vw;
+  }
 }
