@@ -111,7 +111,7 @@ export default function About() {
           </div>
         </div>
 
-        {/* Investors */}
+        {/* Investors
         <div className="group-of-investors">
           <h3># Group of Investors & Sponsors</h3>
           <div className="items">
@@ -161,7 +161,7 @@ export default function About() {
           <Link to="#">
             <span style={{ color: "#3BC478" }}>~root:#</span> git clone group-of-investor
           </Link>
-        </div>
+        </div> */}
 
         <span className="openSourceBanner"></span>
       </div>
